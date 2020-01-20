@@ -1,6 +1,9 @@
 package com.wildcodeschool.wildandwizard.repository;
 
-// TODO : update this interface
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.wildcodeschool.wildandwizard.entity.School;
 
-public interface SchoolRepository {
+@Repository
+public interface SchoolRepository extends JpaRepository<School, Long> {
 }
